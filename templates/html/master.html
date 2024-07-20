@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+<head>
+    <title>Reminder App</title>
+    <link href="{% static 'styles/global.css' %}" rel="stylesheet"/>
+</head>
+<body>
+   <div class="header" id="header" name="header" >
+            Reminder App
+   </div>
+   <div class="content" id="content" name="content">
+        <div  class="side-menu" id="side-menu" name="side-menu">
+
+        </div>
+        <div  class="body-content" id="body-content" name="body-content">
+                {% block bodyContent %}
+                {% endblock %}
+        </div>
+   </div>     
+   <div class="footer">
+        {% block footer %}
+        {% endblock %}
+   </div>   
+</body>
+</html>

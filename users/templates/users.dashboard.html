@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+
+{% block bodyContent %}
+<div style="background-color: white;">
+  {% for item in data %}
+     <div><span style="padding:10px;margin-left:10">Id</span> <span>{{item.Id}}</span> </div>
+     <div><span style="padding:10px;margin-left:10">Name</span> <span>{{item.Name}}</span> </div>
+  {% endfor %}
+</div>
+{% endblock %}
